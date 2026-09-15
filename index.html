@@ -149,6 +149,15 @@
     margin-left:4px;
   }
 
+  .lock-badge{
+    display:inline-flex;
+    vertical-align:middle;
+    margin-left:6px;
+    width:15px; height:15px;
+    color:var(--gold);
+  }
+  .lock-badge svg{ width:100%; height:100%; }
+
   .modules{
     display:flex;
     flex-direction:column;
@@ -414,7 +423,7 @@
       </span>
     </a>
 
-    <a class="card card-wide" href="https://ifrs-amp.github.io/RekapanNilai_BPJS/" target="_blank" rel="noopener">
+    <a class="card card-wide" href="javascript:void(0)" onclick="openBPJS()">
       <span class="tag">Modul 07</span>
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -424,7 +433,9 @@
           <path d="M8.5 16.5h7" stroke="#f6f4ee" stroke-width="1.6" stroke-linecap="round"/>
         </svg>
       </div>
-      <h2>Rekapan Nilai Tagihan BPJS</h2>
+      <h2>Rekapan Nilai Tagihan BPJS <span class="lock-badge" title="Modul ini memerlukan password">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="10.5" width="14" height="9" rx="1.8" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span></h2>
       <span class="go">Buka modul
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
@@ -433,5 +444,16 @@
   </div>
 
 </div>
+<script>
+  function openBPJS(){
+    var pw = prompt("Modul ini memerlukan password.\nMasukkan password untuk membuka Rekapan Nilai Tagihan BPJS:");
+    if(pw === null) return;
+    if(pw === "bpjs"){
+      window.open("https://ifrs-amp.github.io/RekapanNilai_BPJS/", "_blank", "noopener");
+    } else {
+      alert("Password salah. Akses ditolak.");
+    }
+  }
+</script>
 </body>
 </html>
