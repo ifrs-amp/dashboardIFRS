@@ -220,6 +220,9 @@
   .card:nth-child(7)::before{
     background:linear-gradient(90deg, var(--sky), var(--leaf));
   }
+  .card:nth-child(8)::before{
+    background:linear-gradient(90deg, var(--teal), var(--gold));
+  }
   .card:hover{
     transform:translateY(-6px);
     border-color:var(--teal);
@@ -276,6 +279,10 @@
   .card:nth-child(7) .icon{
     background:linear-gradient(145deg, #1c6f9c, var(--leaf));
     box-shadow:0 10px 20px -8px rgba(28,111,156,0.5);
+  }
+  .card:nth-child(8) .icon{
+    background:linear-gradient(145deg, var(--teal), #8a6423);
+    box-shadow:0 10px 20px -8px rgba(18,102,95,0.5);
   }
   .card:hover .icon{ transform:scale(1.08) rotate(-4deg); }
   .icon svg{width:20px; height:20px;}
@@ -436,6 +443,20 @@
       <h2>Rekapan Nilai Tagihan BPJS <span class="lock-badge" title="Modul ini memerlukan password">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="10.5" width="14" height="9" rx="1.8" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       </span></h2>
+      <span class="go">Buka modul
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a class="card card-wide" href="https://ifrs-amp.github.io/Medication_error_IFRS/" target="_blank" rel="noopener">
+      <span class="tag">Modul 08</span>
+      <div class="icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3.5 4 7v5.5c0 4.5 3.4 7.7 8 8.5 4.6-.8 8-4 8-8.5V7l-8-3.5Z" stroke="#f6f4ee" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M12 8.5v4.5M12 15.7h.01" stroke="#f6f4ee" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2>Medication Error</h2>
       <span class="go">Buka modul
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
