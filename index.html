@@ -10,7 +10,8 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;background:ra
 .hub{position:absolute;left:50%;top:50%;width:calc(var(--S)*.29);height:calc(var(--S)*.29);min-width:170px;min-height:170px;transform:translate(-50%,-50%);border-radius:50%;
 border:3px solid #5f9973;background:radial-gradient(circle at 35% 25%,#fff,#dcebd8 75%);box-shadow:0 0 0 12px rgba(255,255,255,.18),0 0 60px 14px rgba(255,255,255,.55);
 display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;cursor:pointer;z-index:3;font:inherit;color:inherit;animation:pulse 3.6s ease-in-out infinite}
-.hub img{width:52%;height:auto}
+.hub img{width:52%;height:auto;animation:logo 4.5s ease-in-out infinite;filter:drop-shadow(0 6px 8px rgba(30,80,50,.25))}
+@keyframes logo{0%,100%{transform:translateY(0) rotate(-2deg) scale(1)}25%{transform:translateY(-7px) rotate(0deg) scale(1.05)}50%{transform:translateY(-3px) rotate(2deg) scale(1)}75%{transform:translateY(-8px) rotate(0deg) scale(1.05)}}
 .hub span{font-weight:800;font-size:clamp(15px,calc(var(--S)*.025),21px);letter-spacing:.02em;text-align:center;line-height:1.15;color:#2f7a4d}
 @keyframes pulse{50%{box-shadow:0 0 0 20px rgba(255,255,255,.1),0 0 80px 22px rgba(255,255,255,.65)}}
 .b{position:absolute;left:50%;top:50%;width:var(--b);height:var(--b);min-width:118px;min-height:118px;margin:calc(var(--b)/-2) 0 0 calc(var(--b)/-2);border-radius:50%;
